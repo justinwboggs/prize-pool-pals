@@ -66,7 +66,7 @@ export function FeaturesSection() {
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Our platform handles the complexity so you can focus on growing your business
-            through the power of network-driven giveaways.
+            through the power of pooled giveaways.
           </p>
         </div>
 
