@@ -82,11 +82,6 @@ export function HeroSection() {
             </p>
           </div>
 
-          {/* Waitlist CTA */}
-          <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl p-8 mb-8 shadow-card">
-            <WaitlistForm variant="hero" />
-          </div>
-
           {/* Secondary CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
