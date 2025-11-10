@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { PrizeCounter } from "@/components/ui/prize-counter";
+import { WaitlistForm } from "@/components/waitlist-form";
 import { Check, Star, Zap } from "lucide-react";
 
 const plans = [
@@ -113,15 +114,21 @@ export function PricingSection() {
                 ))}
               </div>
 
-              <Button 
-                variant={plan.popular ? "primary" : "outline"} 
-                className="w-full"
-                size="lg"
-                onClick={() => navigate('/auth')}
-              >
-                {plan.popular && <Zap className="w-4 h-4 mr-2" />}
-                {plan.cta}
-              </Button>
+              {plan.popular ? (
+                <Button 
+                  variant="primary" 
+                  className="w-full"
+                  size="lg"
+                  onClick={() => navigate('/auth')}
+                >
+                  <Zap className="w-4 h-4 mr-2" />
+                  {plan.cta}
+                </Button>
+              ) : (
+                <div className="mt-4">
+                  <WaitlistForm variant="inline" />
+                </div>
+              )}
             </Card>
           ))}
         </div>

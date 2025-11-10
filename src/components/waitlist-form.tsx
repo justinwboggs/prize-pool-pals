@@ -39,7 +39,7 @@ export function WaitlistForm({ variant = 'inline', className = '' }: WaitlistFor
             email: email.toLowerCase().trim(),
             source: 'website',
             utm_source: 'organic',
-            utm_campaign: 'october_2025_beta'
+            utm_campaign: 'december_2025_beta'
           }
         ]);
 
@@ -56,7 +56,7 @@ export function WaitlistForm({ variant = 'inline', className = '' }: WaitlistFor
         setIsSuccess(true);
         toast({
           title: "Welcome to the waitlist!",
-          description: "We'll notify you when our October 2025 beta giveaway launches.",
+          description: "We'll notify you when our December 2025 beta giveaway launches.",
         });
       }
       
@@ -89,7 +89,7 @@ export function WaitlistForm({ variant = 'inline', className = '' }: WaitlistFor
       {isHero && (
         <div className="text-center mb-6">
           <Badge variant="outline" className="mb-3 border-primary/30 text-primary bg-primary/5">
-            🎉 October 2025 Beta Launch
+            🎉 December 2025 Beta Launch
           </Badge>
           <h3 className="text-2xl font-bold mb-2">Join the Waitlist for our Grand Prize Tier</h3>
           <p className="text-muted-foreground">
