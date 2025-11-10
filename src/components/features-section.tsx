@@ -61,7 +61,7 @@ export function FeaturesSection() {
             Everything You Need to
             <br />
             <span className="text-transparent bg-gradient-primary bg-clip-text">
-              Dominate Your Market
+              Boost Sales with Cash Giveaways
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
