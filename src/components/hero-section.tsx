@@ -25,7 +25,7 @@ export function HeroSection() {
       <div className="container relative mx-auto px-4">
         <div className="text-center max-w-4xl mx-auto">
           {/* Main headline */}
-          <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
             Turn your popups into{" "}
             <span className="text-transparent bg-gradient-prize bg-clip-text">
               profit
