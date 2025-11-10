@@ -1,7 +1,25 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 
 export function Footer() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        element?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    } else {
+      const element = document.getElementById(sectionId);
+      element?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer className="border-t border-border bg-card/30 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-12">
@@ -25,8 +43,24 @@ export function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Product</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#features" className="hover:text-foreground transition-smooth">Features</a></li>
-              <li><a href="#pricing" className="hover:text-foreground transition-smooth">Pricing</a></li>
+              <li>
+                <a 
+                  href="#features" 
+                  onClick={(e) => handleNavClick(e, 'features')}
+                  className="hover:text-foreground transition-smooth"
+                >
+                  Features
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#pricing" 
+                  onClick={(e) => handleNavClick(e, 'pricing')}
+                  className="hover:text-foreground transition-smooth"
+                >
+                  Pricing
+                </a>
+              </li>
             </ul>
           </div>
 
