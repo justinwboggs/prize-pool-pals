@@ -5,6 +5,7 @@ import Dashboard from '@/pages/Dashboard';
 import Rules from '@/pages/Rules';
 import Amoe from '@/pages/Amoe';
 import Privacy from '@/pages/Privacy';
+import About from '@/pages/About';
 import NotFound from '@/pages/NotFound';
 import { Toaster } from '@/components/ui/toaster';
 
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: '/privacy',
     element: <Privacy />,
+  },
+  {
+    path: '/about',
+    element: <About />,
   },
   {
     path: '*',
