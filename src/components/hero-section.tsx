@@ -24,11 +24,6 @@ export function HeroSection() {
       
       <div className="container relative mx-auto px-4">
         <div className="text-center max-w-4xl mx-auto">
-          {/* Beta announcement */}
-          <Badge variant="outline" className="mb-6 border-primary/20 text-primary">
-            🎉 Now in Beta - Join 500+ Shopify stores
-          </Badge>
-
           {/* Main headline */}
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
             Turn your popups into{" "}
