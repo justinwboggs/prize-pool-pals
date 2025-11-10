@@ -23,9 +23,9 @@ const plans = [
     prizeAmount: 1000
   },
   {
-    name: "Premium",
+    name: "Premium- COMING SOON",
     price: 149,
-    description: "Join the network for life-changing prizes",
+    description: "Join the Waitlist today for early access to the life-changing Pooled Prize Tier",
     features: [
       "Access to $5,000+ pooled prizes",
       "Real-time analytics dashboard",
