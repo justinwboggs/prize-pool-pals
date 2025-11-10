@@ -33,7 +33,7 @@ export function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Resources</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#" className="hover:text-foreground transition-smooth">Case Studies</a></li>
+              <li><a href="#" className="hover:text-foreground transition-smooth">Partner Stores</a></li>
               <li><a href="#" className="hover:text-foreground transition-smooth">Blog</a></li>
             </ul>
           </div>
