@@ -91,7 +91,7 @@ export function PricingSection() {
 
                 <div className="bg-muted/50 rounded-lg p-4 mb-6">
                   <p className="text-sm text-muted-foreground mb-2">
-                    {plan.price === 0 ? "Your max prize" : "Current network prize"}
+                    {plan.price === 0 ? "Offer your customers" : "Current network prize"}
                   </p>
                   <div className="text-3xl font-bold">
                     <PrizeCounter amount={plan.prizeAmount} animateOnMount={false} />
