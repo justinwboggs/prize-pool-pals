@@ -22,11 +22,11 @@ export function HeroSection() {
 
           {/* Main headline */}
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-            Turn Your Store Into a
-            <br />
+            Rafl turns your boring popups into{" "}
             <span className="text-transparent bg-gradient-prize bg-clip-text">
-              Conversion Machine with Giveaways
+              compliant giveaways that prove incremental revenue
             </span>
+            —live on Shopify in under an hour.
           </h1>
 
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
