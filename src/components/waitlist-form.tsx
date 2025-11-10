@@ -91,7 +91,7 @@ export function WaitlistForm({ variant = 'inline', className = '' }: WaitlistFor
           <Badge variant="outline" className="mb-3 border-primary/30 text-primary bg-primary/5">
             🎉 October 2025 Beta Launch
           </Badge>
-          <h3 className="text-2xl font-bold mb-2">Join the Waitlist</h3>
+          <h3 className="text-2xl font-bold mb-2">Join the Waitlist for our Grand Prize Tier</h3>
           <p className="text-muted-foreground">
             Be the first to know when our beta giveaway launches with life-changing prizes
           </p>
