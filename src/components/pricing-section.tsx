@@ -112,6 +112,11 @@ export function PricingSection() {
                     <span className="text-sm">{feature}</span>
                   </div>
                 ))}
+                {!plan.popular && (
+                  <p className="text-xs text-muted-foreground mt-4 pl-8">
+                    * If winning customer comes from your store, then you will win 10% of prize. Example: $5,000 prize = $500 gets paid to you!
+                  </p>
+                )}
               </div>
 
               {plan.popular ? (
