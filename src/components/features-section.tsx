@@ -4,12 +4,10 @@ import {
   Zap, 
   Users, 
   TrendingUp, 
-  Shield, 
   Mail, 
   BarChart3,
   Sparkles,
-  CreditCard,
-  Globe
+  CreditCard
 } from "lucide-react";
 
 const features = [
@@ -32,12 +30,6 @@ const features = [
     badge: "Impact"
   },
   {
-    icon: Shield,
-    title: "Fraud Protection",
-    description: "Built-in fraud detection and legal compliance across all 50 states.",
-    badge: "Security"
-  },
-  {
     icon: BarChart3,
     title: "Real-Time Analytics",
     description: "Track performance, ROI, and customer acquisition with detailed dashboards.",
@@ -54,12 +46,6 @@ const features = [
     title: "Automated Payouts",
     description: "Winners receive payments instantly. Full escrow and tax documentation included.",
     badge: "Finance"
-  },
-  {
-    icon: Globe,
-    title: "Global Compliance",
-    description: "Legal frameworks for international giveaways with automatic regulation checking.",
-    badge: "Legal"
   }
 ];
 
