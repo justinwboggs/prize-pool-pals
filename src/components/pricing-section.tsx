@@ -119,15 +119,17 @@ export function PricingSection() {
                 )}
               </div>
 
-              <Button 
-                variant={plan.popular ? "primary" : "outline"} 
-                className="w-full"
-                size="lg"
-                onClick={() => navigate('/auth')}
-              >
-                {plan.popular && <Zap className="w-4 h-4 mr-2" />}
-                {plan.cta}
-              </Button>
+              {plan.popular && (
+                <Button 
+                  variant="primary" 
+                  className="w-full"
+                  size="lg"
+                  onClick={() => navigate('/auth')}
+                >
+                  <Zap className="w-4 h-4 mr-2" />
+                  {plan.cta}
+                </Button>
+              )}
             </Card>
           ))}
         </div>
