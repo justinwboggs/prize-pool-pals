@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { 
   Zap, 
-  Users, 
+  Shield,
   TrendingUp, 
   Mail, 
   BarChart3,
@@ -18,10 +18,10 @@ const features = [
     badge: "Core"
   },
   {
-    icon: Users,
-    title: "Cross-Store Network",
-    description: "Tap into thousands of customers from partner stores. Expand your reach exponentially.",
-    badge: "Growth"
+    icon: Shield,
+    title: "Legal Giveaway Compliance",
+    description: "Fully compliant with all federal and state sweepstakes regulations. We handle all legal requirements so you can run promotions with confidence.",
+    badge: "Security"
   },
   {
     icon: TrendingUp,
