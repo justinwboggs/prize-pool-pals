@@ -30,8 +30,7 @@ export function HeroSection() {
           </h1>
 
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Be among the first to experience the network effect. Our October 2025 beta will feature 
-            life-changing cash prizes and revolutionary cross-store promotion technology.
+            Rafl turns your boring popups into compliant giveaways that prove incremental revenue—live on Shopify in under an hour.
           </p>
 
           {/* Prize showcase */}
