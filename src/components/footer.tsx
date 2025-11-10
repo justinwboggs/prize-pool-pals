@@ -27,16 +27,12 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="#features" className="hover:text-foreground transition-smooth">Features</a></li>
               <li><a href="#pricing" className="hover:text-foreground transition-smooth">Pricing</a></li>
-              <li><a href="#" className="hover:text-foreground transition-smooth">Integrations</a></li>
-              <li><a href="#" className="hover:text-foreground transition-smooth">API</a></li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-semibold mb-4">Resources</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#" className="hover:text-foreground transition-smooth">Documentation</a></li>
-              <li><a href="#" className="hover:text-foreground transition-smooth">Help Center</a></li>
               <li><a href="#" className="hover:text-foreground transition-smooth">Case Studies</a></li>
               <li><a href="#" className="hover:text-foreground transition-smooth">Blog</a></li>
             </ul>
@@ -46,9 +42,7 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Company</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="#" className="hover:text-foreground transition-smooth">About</a></li>
-              <li><a href="#" className="hover:text-foreground transition-smooth">Careers</a></li>
               <li><Link to="/privacy" className="hover:text-foreground transition-smooth">Privacy</Link></li>
-              <li><a href="#" className="hover:text-foreground transition-smooth">Terms</a></li>
             </ul>
           </div>
         </div>
