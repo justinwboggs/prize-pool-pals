@@ -82,32 +82,20 @@ export function HeroSection() {
             </p>
           </div>
 
-          {/* Secondary CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              variant="outline" 
-              size="lg"
-              onClick={() => navigate('/auth')}
-            >
-              Store Owner? Sign Up
-            </Button>
-            <Button variant="ghost" size="lg">
-              Watch Demo
-            </Button>
-          </div>
-
-          {/* Trust indicators */}
-          <div className="mt-12 pt-8 border-t border-border">
-            <p className="text-sm text-muted-foreground mb-4">Trusted by Shopify stores worldwide</p>
-            <div className="flex items-center justify-center gap-8 opacity-60">
-              <div className="flex items-center gap-2">
-                <Zap className="w-4 h-4" />
-                <span className="text-sm">Shopify Plus Compatible</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <DollarSign className="w-4 h-4" />
-                <span className="text-sm">$2M+ in Prizes Awarded</span>
-              </div>
+          {/* Video Explainer */}
+          <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-4 mb-8 shadow-card">
+            <div className="aspect-video w-full max-w-3xl mx-auto rounded-lg overflow-hidden">
+              <iframe 
+                width="100%" 
+                height="100%" 
+                src="https://www.youtube.com/embed/wzfIglmK7hQ?si=6yX64SfhPyogDz0a" 
+                title="YouTube video player" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerPolicy="strict-origin-when-cross-origin" 
+                allowFullScreen
+                className="w-full h-full"
+              />
             </div>
           </div>
         </div>
