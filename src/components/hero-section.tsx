@@ -1,10 +1,19 @@
 import { useNavigate } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { PrizeCounter } from "@/components/ui/prize-counter";
 import { WaitlistForm } from "./waitlist-form";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
-import { ArrowRight, Zap, Store, Users, DollarSign } from "lucide-react";
+import { Zap, Store, Users, DollarSign } from "lucide-react";
+import popupExample1 from "@/assets/popup-example-1.jpg";
+import popupExample2 from "@/assets/popup-example-2.jpg";
+import popupExample3 from "@/assets/popup-example-3.jpg";
 
 export function HeroSection() {
   const navigate = useNavigate();
@@ -32,39 +41,45 @@ export function HeroSection() {
             Rafl turns your boring popups into Grand Pooled Giveaways proven to Drive More Sales—live on Shopify in less than 5 minutes.
           </p>
 
-          {/* Prize showcase */}
+          {/* Popup Examples Carousel */}
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 mb-8 shadow-card">
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
-              <div className="text-center">
-                <p className="text-sm text-muted-foreground mb-2">This Month's Prize Pool</p>
-                <div className="text-5xl lg:text-6xl font-bold">
-                  <PrizeCounter amount={12500} />
-                </div>
-                <p className="text-sm text-muted-foreground mt-2">
-                  From 73 participating stores
-                </p>
-              </div>
-              
-              <div className="hidden lg:block w-px h-20 bg-border" />
-              
-              <div className="grid grid-cols-2 gap-6 lg:gap-8">
-                <div className="text-center">
-                  <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg mb-3 mx-auto">
-                    <Store className="w-6 h-6 text-primary" />
+            <p className="text-sm text-muted-foreground mb-6 text-center">See Rafl in Action</p>
+            <Carousel className="w-full max-w-3xl mx-auto">
+              <CarouselContent>
+                <CarouselItem>
+                  <div className="p-1">
+                    <img 
+                      src={popupExample1} 
+                      alt="Example popup showing Win $500 Cash giveaway" 
+                      className="w-full h-auto rounded-lg shadow-lg"
+                    />
                   </div>
-                  <div className="text-2xl font-bold text-foreground">73</div>
-                  <div className="text-sm text-muted-foreground">Active Stores</div>
-                </div>
-                
-                <div className="text-center">
-                  <div className="flex items-center justify-center w-12 h-12 bg-accent/10 rounded-lg mb-3 mx-auto">
-                    <Users className="w-6 h-6 text-accent" />
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="p-1">
+                    <img 
+                      src={popupExample2} 
+                      alt="Example popup showing Unlock $1,000 Grand Prize giveaway" 
+                      className="w-full h-auto rounded-lg shadow-lg"
+                    />
                   </div>
-                  <div className="text-2xl font-bold text-foreground">24.3K</div>
-                  <div className="text-sm text-muted-foreground">Participants</div>
-                </div>
-              </div>
-            </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="p-1">
+                    <img 
+                      src={popupExample3} 
+                      alt="Example popup showing Enter to Win $750 giveaway" 
+                      className="w-full h-auto rounded-lg shadow-lg"
+                    />
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+            <p className="text-xs text-muted-foreground mt-4 text-center">
+              From 73 participating stores • 24.3K participants this month
+            </p>
           </div>
 
           {/* Waitlist CTA */}
