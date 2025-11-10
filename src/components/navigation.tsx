@@ -1,7 +1,7 @@
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { RaflLogo } from "./rafl-logo";
+import raflLogo from "@/assets/rafl-logo.png";
 
 export function Navigation() {
   console.log("Navigation component rendering...");
@@ -27,8 +27,13 @@ export function Navigation() {
     <nav className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center space-x-3">
-          <RaflLogo className="w-8 h-8" />
-          <span className="text-xl font-bold">Rafl</span>
+          <button 
+            onClick={() => navigate('/')}
+            className="flex items-center space-x-3 hover:opacity-80 transition-opacity"
+          >
+            <img src={raflLogo} alt="Rafl Logo" className="w-8 h-8" />
+            <span className="text-xl font-bold">Rafl</span>
+          </button>
           <Badge variant="secondary" className="ml-2">Beta</Badge>
         </div>
         
