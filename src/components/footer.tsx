@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 
 export function Footer() {
@@ -46,7 +47,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="#" className="hover:text-foreground transition-smooth">About</a></li>
               <li><a href="#" className="hover:text-foreground transition-smooth">Careers</a></li>
-              <li><a href="#" className="hover:text-foreground transition-smooth">Privacy</a></li>
+              <li><Link to="/privacy" className="hover:text-foreground transition-smooth">Privacy</Link></li>
               <li><a href="#" className="hover:text-foreground transition-smooth">Terms</a></li>
             </ul>
           </div>

@@ -4,6 +4,7 @@ import Auth from '@/pages/Auth';
 import Dashboard from '@/pages/Dashboard';
 import Rules from '@/pages/Rules';
 import Amoe from '@/pages/Amoe';
+import Privacy from '@/pages/Privacy';
 import NotFound from '@/pages/NotFound';
 import { Toaster } from '@/components/ui/toaster';
 
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: '/amoe/:promoId',
     element: <Amoe />,
+  },
+  {
+    path: '/privacy',
+    element: <Privacy />,
   },
   {
     path: '*',
