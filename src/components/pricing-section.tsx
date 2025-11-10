@@ -18,7 +18,7 @@ const plans = [
       "Community support"
     ],
     cta: "Start Free",
-    popular: false,
+    popular: true,
     prizeAmount: 1000
   },
   {
@@ -36,7 +36,7 @@ const plans = [
       "Automated winner selection"
     ],
     cta: "Join Premium Now",
-    popular: true,
+    popular: false,
     prizeAmount: 8500
   }
 ];
