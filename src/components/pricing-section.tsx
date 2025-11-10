@@ -119,23 +119,24 @@ export function PricingSection() {
                 )}
               </div>
 
-              {plan.popular ? (
-                <Button 
-                  variant="primary" 
-                  className="w-full"
-                  size="lg"
-                  onClick={() => navigate('/auth')}
-                >
-                  <Zap className="w-4 h-4 mr-2" />
-                  {plan.cta}
-                </Button>
-              ) : (
-                <div className="mt-4">
-                  <WaitlistForm variant="inline" />
-                </div>
-              )}
+              <Button 
+                variant={plan.popular ? "primary" : "outline"} 
+                className="w-full"
+                size="lg"
+                onClick={() => navigate('/auth')}
+              >
+                {plan.popular && <Zap className="w-4 h-4 mr-2" />}
+                {plan.cta}
+              </Button>
             </Card>
           ))}
+        </div>
+
+        {/* Premium Tier Waitlist */}
+        <div className="max-w-2xl mx-auto mt-12">
+          <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl p-8 shadow-card">
+            <WaitlistForm variant="hero" />
+          </div>
         </div>
 
         <div className="text-center mt-12 pt-8 border-t border-border">
