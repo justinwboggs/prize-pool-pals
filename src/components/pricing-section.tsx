@@ -27,17 +27,15 @@ const plans = [
     description: "Join the network for life-changing prizes",
     features: [
       "Access to $5,000+ pooled prizes",
-      "Cross-store customer sharing",
-      "Advanced email marketing",
       "Real-time analytics dashboard",
       "Priority support",
-      "Custom branding options",
-      "Fraud protection included",
-      "Automated winner selection"
+      "Legal Giveaway Compliance Included",
+      "Automated winner selection",
+      "Winning Store Gets 10% of Prize"
     ],
     cta: "Join Premium Now",
     popular: false,
-    prizeAmount: 8500
+    prizeAmount: 5000
   }
 ];
 
@@ -91,7 +89,7 @@ export function PricingSection() {
 
                 <div className="bg-muted/50 rounded-lg p-4 mb-6">
                   <p className="text-sm text-muted-foreground mb-2">
-                    {plan.price === 0 ? "Offer your customers" : "Current network prize"}
+                    {plan.price === 0 ? "Offer your customers" : "Grand Pooled Prize"}
                   </p>
                   <div className="text-3xl font-bold">
                     <PrizeCounter amount={plan.prizeAmount} animateOnMount={false} />
